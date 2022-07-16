@@ -126,6 +126,8 @@ div.top-line {
     display: none; }
 .landing-page-wrapper .main-carousel a {
   color: #CCA776; }
+.landing-page-wrapper .main-carousel span {
+  color: #CCA776; }
 .landing-page-wrapper .main-carousel .carousel-item {
   height: 600px;
   background-size: cover;
@@ -281,6 +283,8 @@ div.top-line {
   align-items: center;
   flex-direction: column;
   text-align: center; }
+  .landing-page-wrapper .about-us-content span {
+    color: #CCA776; }
   .landing-page-wrapper .about-us-content h2 {
     color: #181D26;
     font-family: "Playfair Display", Sans-serif;
@@ -310,6 +314,8 @@ div.top-line {
     align-items: center;
     flex-direction: column;
     text-align: center; }
+    .landing-page-wrapper .experience .experience-content span {
+      color: #CCA776; }
     .landing-page-wrapper .experience .experience-content h2 {
       color: #fff;
       font-family: "Playfair Display", Sans-serif;
@@ -510,8 +516,6 @@ div.top-line {
     flex-direction: column; }
     .landing-page-wrapper .header-wrapper .logo-and-navigation .logo-wrapper .logo-content {
       flex-direction: column; }
-  .landing-page-wrapper .main-carousel span {
-    color: #CCA776; }
   .landing-page-wrapper .main-carousel .carousel-item:first-child .first-item div:first-child {
     font-size: 30px; }
   .landing-page-wrapper .main-carousel .carousel-item:first-child .first-item div:nth-child(2) {
@@ -528,14 +532,10 @@ div.top-line {
       font-size: 20px; }
   .landing-page-wrapper .main-carousel .carousel-item:last-child .last-item div:first-child {
     font-size: 28px; }
-  .landing-page-wrapper .about-us-content span {
-    color: #CCA776; }
   .landing-page-wrapper .about-us-content h2 {
     font-size: 30px; }
   .landing-page-wrapper .about-us-content p {
     font-size: 16px; }
-  .landing-page-wrapper .experience .experience-content span {
-    color: #CCA776; }
   .landing-page-wrapper .experience .experience-content h2 {
     font-size: 30px; }
   .landing-page-wrapper .experience .experience-content p {

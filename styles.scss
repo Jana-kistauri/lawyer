@@ -199,6 +199,10 @@ div.top-line {
       color: $color1;
     }
 
+    span {
+      color: $color1;
+    }
+
     .carousel-item {
       height: 600px;
       background-size: cover;
@@ -394,6 +398,10 @@ div.top-line {
     flex-direction: column;
     text-align: center;
 
+    span {
+      color: $color1;
+    }
+
     h2 {
       color: #181D26;
       font-family: "Playfair Display", Sans-serif;
@@ -427,6 +435,10 @@ div.top-line {
       @include flex(center, center);
       flex-direction: column;
       text-align: center;
+
+      span {
+        color: $color1;
+      }
 
       h2 {
         color: #fff;
@@ -724,10 +736,6 @@ div.top-line {
     }
 
     .main-carousel {
-      span {
-        color: $color1;
-      }
-
       .carousel-item:first-child {
         .first-item {
           div {
@@ -776,10 +784,6 @@ div.top-line {
     }
 
     .about-us-content {
-      span {
-        color: $color1;
-      }
-
       h2 {
         font-size: 30px;
       }
@@ -791,10 +795,6 @@ div.top-line {
 
     .experience {
       .experience-content {
-        span {
-          color: $color1;
-        }
-
         h2 {
           font-size: 30px;
         }

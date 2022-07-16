@@ -20,6 +20,41 @@ ul {
   }
 }
 
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  font-size: 20px;
+  color: $color2;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  top: 30px;
+  right: -10px;
+  background-color: #fff;
+  z-index: 20;
+
+  div {
+    width: 20px;
+    height: 2px;
+    background-color: $color2;
+    margin-bottom: 5px;
+  }
+}
+
 div.top-line {
   height: 2px;
   width: 40px;
@@ -106,7 +141,7 @@ div.top-line {
 
     }
 
-    .logo-wrapper {
+    .logo-content {
       @include flex(center, center);
       margin: 20px 0px 20px 0px;
 
@@ -151,6 +186,10 @@ div.top-line {
           }
         }
       }
+    }
+
+    .burger {
+      display: none;
     }
   }
 
@@ -350,6 +389,7 @@ div.top-line {
   .about-us-content {
     max-width: 1300px;
     margin: 80px auto;
+    padding: 0 20px;
     @include flex(center, center);
     flex-direction: column;
     text-align: center;
@@ -383,6 +423,7 @@ div.top-line {
     .experience-content {
       max-width: 1300px;
       margin: 80px auto;
+      padding: 0 20px;
       @include flex(center, center);
       flex-direction: column;
       text-align: center;
@@ -410,23 +451,37 @@ div.top-line {
     }
   }
 
-  .contact {
-    max-width: 1300px;
-    margin: 80px auto;
-    @include flex(space-between, center);
-    text-align: center;
-
-    div {
-      img {
-        width: 30px;
-        margin-bottom: 15px;
-      }
-
-      p {
-        margin-bottom: 10px;
-      }
+  .contact-wrapper {
+    h2 {
+      margin-top: 50px;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
     }
 
+    .contact {
+      max-width: 1300px;
+      margin: 80px auto;
+      padding: 0 20px;
+      @include flex(space-between, center);
+      text-align: center;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      div {
+        img {
+          width: 30px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          margin-bottom: 10px;
+        }
+      }
+
+    }
   }
 
   .contact-form {
@@ -457,9 +512,11 @@ div.top-line {
         border-style: solid;
         border-width: 1px 1px 1px 1px;
         border-color: #F8F8F8;
+        width: 600px;
       }
 
       textarea {
+        width: 600px;
         padding: 20px;
         border: 0;
         background-color: #F8F8F8;
@@ -563,5 +620,233 @@ div.top-line {
       }
     }
   }
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .landing-page-wrapper {
+    .header-wrapper {
+      .header-top-container {
+        flex-direction: column;
+
+        .phone-time-container {
+          margin-right: 0;
+          flex-wrap: wrap;
+
+          .phone-number-container {
+            flex-wrap: wrap;
+          }
+        }
+      }
+
+      .navigation-wrapper {
+        display: none !important;
+
+        .navigation-content {
+          width: 75%;
+        }
+      }
+
+      .burger.show {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: self-start;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+        padding: 20px 15px;
+        margin-top: 0;
+        overflow: hidden;
+
+        a {
+          color: $color2;
+          text-decoration: none;
+          margin-right: 0;
+          margin-bottom: 15px;
+          font-weight: bold;
+          font-size: 18px;
+
+          &:hover {
+            color: $color1;
+          }
+        }
+      }
+
+    }
+
+    .logo-and-navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-wrapper {
+      display: inline-block !important;
+    }
+
+    .burger-menu {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .principes {
+      background: #181D26;
+      padding: 40px 0;
+
+      .principes-content {
+        ul {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  .landing-page-wrapper {
+    .header-wrapper {
+      .logo-and-navigation {
+        flex-direction: column;
+
+        .logo-wrapper {
+          .logo-content {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+    .main-carousel {
+      span {
+        color: $color1;
+      }
+
+      .carousel-item:first-child {
+        .first-item {
+          div {
+            &:first-child {
+              font-size: 30px;
+            }
+
+            &:nth-child(2) {
+              font-size: 25px;
+            }
+          }
+
+        }
+      }
+
+      .carousel-item:nth-child(2) {
+        .second-item {
+          padding: 0 20px;
+
+          div {
+            &:first-child {
+              font-size: 24px;
+              margin-bottom: 20px;
+            }
+
+            &:nth-child(2) {
+              font-size: 14px;
+            }
+
+            &:last-child {
+              margin-top: 20px;
+              font-size: 20px;
+            }
+          }
+
+        }
+      }
+
+      .carousel-item:last-child {
+        .last-item {
+          div:first-child {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
+    .about-us-content {
+      span {
+        color: $color1;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .experience {
+      .experience-content {
+        span {
+          color: $color1;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .contact-wrapper {
+      h2 {
+        font-size: 30px;
+      }
+
+      .contact {
+        flex-direction: column;
+
+        div {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .contact-form {
+      .title {
+        font-size: 30px;
+      }
+
+      form {
+        input, textarea {
+          width: 80%;
+        }
+      }
+    }
+
+    .principes {
+
+      .principes-content {
+
+        ul {
+          li {
+            margin-right: 0;
+          }
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
 }
 

@@ -49,3 +49,12 @@ function animatedScrool() {
 }
 
 animatedScrool();
+
+function showBurgerMenu() {
+    document.querySelector('.burger').classList.toggle("show")
+}
+
+
+document.querySelector('.burger-menu').addEventListener("click", showBurgerMenu);
+document.querySelector('.close').addEventListener("click", showBurgerMenu);
+document.querySelectorAll('.burger a').forEach(item => item.addEventListener("click", showBurgerMenu))

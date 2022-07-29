@@ -809,6 +809,16 @@ div.top-line {
     }
 
     .about-us-content {
+      .about-us-images {
+        flex-wrap: wrap;
+
+        img {
+          &:first-child {
+            margin-right: 0;
+          }
+        }
+      }
+
       h2 {
         font-size: 30px;
       }

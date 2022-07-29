@@ -548,6 +548,10 @@ div.top-line {
       font-size: 20px; }
   .landing-page-wrapper .main-carousel .carousel-item:last-child .last-item div:first-child {
     font-size: 28px; }
+  .landing-page-wrapper .about-us-content .about-us-images {
+    flex-wrap: wrap; }
+    .landing-page-wrapper .about-us-content .about-us-images img:first-child {
+      margin-right: 0; }
   .landing-page-wrapper .about-us-content h2 {
     font-size: 30px; }
   .landing-page-wrapper .about-us-content p {

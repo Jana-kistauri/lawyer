@@ -223,7 +223,7 @@ div.top-line {
       line-height: 1.4em;
       letter-spacing: 0px; }
 .landing-page-wrapper .main-carousel .carousel-item:last-child {
-  background-image: url(../img/home_slide_03.jpg); }
+  background-image: url(../img/tingey-injury-law-firm-nSpj-Z12lX0-unsplash.jpg); }
   .landing-page-wrapper .main-carousel .carousel-item:last-child .last-item {
     width: 70%;
     height: 100%;
@@ -237,7 +237,7 @@ div.top-line {
       text-align: center;
       color: #FFFFFF;
       font-family: "Playfair Display", Sans-serif;
-      font-size: 40px;
+      font-size: 35px;
       font-weight: 900;
       font-style: normal;
       line-height: 1.4em;
@@ -283,6 +283,18 @@ div.top-line {
   align-items: center;
   flex-direction: column;
   text-align: center; }
+  .landing-page-wrapper .about-us-content .about-us-images {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .landing-page-wrapper .about-us-content .about-us-images img {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .landing-page-wrapper .about-us-content .about-us-images img:first-child {
+        margin-right: 70px; }
   .landing-page-wrapper .about-us-content span {
     color: #CCA776; }
   .landing-page-wrapper .about-us-content h2 {
@@ -343,7 +355,7 @@ div.top-line {
   margin: 80px auto;
   padding: 0 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center; }
   .landing-page-wrapper .contact-wrapper .contact h2 {
@@ -404,10 +416,10 @@ div.top-line {
       background-color: #181D26; }
 .landing-page-wrapper .principes {
   background: #181D26;
-  padding: 40px 0; }
+  padding: 40px 0 0 0; }
   .landing-page-wrapper .principes .principes-content {
     max-width: 1300px;
-    margin: 80px auto;
+    margin: 80px auto 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,6 +456,10 @@ div.top-line {
       font-size: 14px;
       width: 80%;
       margin-bottom: 80px; }
+      .landing-page-wrapper .principes .principes-content .principes-bottom a {
+        color: #CCA776; }
+      .landing-page-wrapper .principes .principes-content .principes-bottom .partner-site {
+        margin-top: 30px; }
 .landing-page-wrapper .footer-block {
   background: #181D26;
   border-top: solid 1px #CCA776; }

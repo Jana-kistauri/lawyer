@@ -4,6 +4,7 @@
 $color1: #CCA776;
 $color2: #181D26;
 
+
 * {
   margin: 0;
   padding: 0;
@@ -324,7 +325,7 @@ div.top-line {
     }
 
     .carousel-item:last-child {
-      background-image: url(../img/home_slide_03.jpg);
+      background-image: url(../img/tingey-injury-law-firm-nSpj-Z12lX0-unsplash.jpg);
 
       .last-item {
         width: 70%;
@@ -339,7 +340,7 @@ div.top-line {
             text-align: center;
             color: #FFFFFF;
             font-family: "Playfair Display", Sans-serif;
-            font-size: 40px;
+            font-size: 35px;
             font-weight: 900;
             font-style: normal;
             line-height: 1.4em;
@@ -397,6 +398,22 @@ div.top-line {
     @include flex(center, center);
     flex-direction: column;
     text-align: center;
+
+    .about-us-images {
+      @include flex(center, center);
+
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        &:first-child {
+          margin-right: 70px;
+        }
+      }
+    }
 
     span {
       color: $color1;
@@ -475,7 +492,7 @@ div.top-line {
       max-width: 1300px;
       margin: 80px auto;
       padding: 0 20px;
-      @include flex(space-between, center);
+      @include flex(space-evenly, center);
       text-align: center;
 
       h2 {
@@ -559,11 +576,11 @@ div.top-line {
 
   .principes {
     background: #181D26;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
 
     .principes-content {
       max-width: 1300px;
-      margin: 80px auto;
+      margin: 80px auto 0 auto;
       @include flex(center, center);
       flex-direction: column;
       text-align: center;
@@ -605,6 +622,14 @@ div.top-line {
         font-size: 14px;
         width: 80%;
         margin-bottom: 80px;
+
+        a {
+          color: $color1;
+        }
+
+        .partner-site {
+          margin-top: 30px;
+        }
       }
     }
   }
